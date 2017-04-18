@@ -1,0 +1,12 @@
+<h1>User</h1>
+
+<?php if(property_exists($single, 'id')):?>
+	<?=$single->id?></br>
+	<?=$single->email?>
+<?php endif;?>
+<hr>
+<?php foreach($all as $user): ?>
+	<br>
+	<?=$user->id?>
+	<?=$user->email?>
+<?php endforeach; ?>
